@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">Tính tiền lương</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="">Lương 1 ngày</label>
+                  <input id="txtTongTien" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Số ngày làm</label>
+                  <!-- <select id="selectTip" class="form-control">
+                    <option value="10">10%</option>
+                    <option value="20">20%</option>
+                    <option value="30">30%</option>
+                  </select> -->
+                  <input id="txtSoNgayLam" type="text" class="form-control" />
+                </div>
+                <!-- <div class="form-group">
+                  <label for="">Muốn chia bao nhiêu người?</label>
+                  <input id="share" type="text" class="form-control" />
+                </div> -->
+                <button id="btnTinh"
+                 class="btn btn-danger">Tính</button>
+              </div>
+              <div id="footerTip" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">Tính giá trị trung bình</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="">Số Thực A</label>
+                  <input id="txtSoThucA" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Số 5</label>
+                   <select id="select5" class="form-control"> 
+                    <option value="5">5</option>
+                    <!-- <option value="20">20%</option>
+                    <option value="30">30%</option> -->
+                  </select> 
+                  <!-- <input id="txtSoNgayLam" type="text" class="form-control" /> -->
+                </div>
+                <div class="form-group">
+                  <label for="">Số Thực B</label>
+                  <input id="txtSoThucB" type="text" class="form-control" />
+                </div>
+                <button id="btnGiaTri"
+                 class="btn btn-danger">Tính</button>
+              </div>
+              <div id="footer" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">Tính giá trị quy đổi</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="">Đô La</label>
+                  <input id="txtDoLa" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Giá Trị Tiền Quy Đổi</label>
+                   <select id="VND" class="form-control"> 
+                    <option value="23500">23500</option>
+                    <!-- <option value="20">20%</option>
+                    <option value="30">30%</option> -->
+                  </select> 
+                  <!-- <input id="txtSoNgayLam" type="text" class="form-control" /> -->
+                </div>
+                <!-- <div class="form-group">
+                  <label for="">Số Thực B</label>
+                  <input id="txtSoThucB" type="text" class="form-control" />
+                </div> -->
+                <button id="btnGiaTriQuyDoi"
+                 class="btn btn-danger">Tính</button>
+              </div>
+              <div id="QuyDoi" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">Tính Chu Vi Diện Tích Hình Chữ Nhật</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="">Chiều Dài</label>
+                  <input id="txtChieuDai" type="text" class="form-control" />
+                </div>
+                <!-- <div class="form-group">
+                  <label for="">Số 5</label>
+                   <select id="select5" class="form-control"> 
+                    <option value="5">5</option>
+                    <option value="20">20%</option>
+                    <option value="30">30%</option> -->
+                  <!-- </select>  -->
+                  <!-- <input id="txtSoNgayLam" type="text" class="form-control" /> -->
+                </div>
+                <div class="form-group">
+                  <label for="">Chiều Rộng</label>
+                  <input id="txtChieuRong" type="text" class="form-control" />
+                </div>
+                <button id="btnCVDT"
+                 class="btn btn-danger">Tính</button>
+              </div>
+              <div id="HinhChuNhat" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">Tính tổng 2 ký số</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="">Nhập Số 2 Chữ Số</label>
+                  <input id="txtKySo" type="text" class="form-control" />
+                </div>
+                <!-- <div class="form-group">
+                  <label for="">Số ngày làm</label>
+                 <select id="selectTip" class="form-control">
+                    <option value="10">10%</option>
+                    <option value="20">20%</option>
+                    <option value="30">30%</option>
+                  </select> -->
+                  <!-- <input id="txtSoNgayLam" type="text" class="form-control" />
+                </div> -->
+                <!-- <div class="form-group">
+                  <label for="">Muốn chia bao nhiêu người?</label>
+                  <input id="share" type="text" class="form-control" />
+                </div> -->
+                <button id="btnTong2kyso"
+                 class="btn btn-danger">Tính</button>
+              </div>
+              <div id="Tong" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <script src="./main.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
